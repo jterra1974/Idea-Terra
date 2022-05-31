@@ -20,6 +20,18 @@
     src: url('Urbanist/static/PlusJakartaSans-Light.ttf');
 }
 
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-menu;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-SemiBold.ttf');
+}
+
+a {
+    font-family: Urbanist-menu;
+}
+
 body {
     display: flex;
     background-color: black;
@@ -31,6 +43,7 @@ body {
 /* Definicion grilla */
 .grid-container {
         width: 95%;
+        background-color: #8584833d;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 150px 400px 400px 150px;
@@ -54,7 +67,6 @@ body {
     justify-content:center;
     background-color: #997c45;
     padding: 10px 0px 10px 0px;
-    
 }
 /* Revisar si funciona flex-wrap!!! Probarlo en el ul*/
 .header-content {
@@ -83,12 +95,12 @@ ul {
 
 header nav li:hover {
     /* Crezca o escale 4 veces su tamaño */
-        transform: scale(1.1)
+        transform: scale(1.1);
     }
 
 header nav li {
     /* dos valores obligatorios que hay que agregar para que funcione 
-1- A que propiedad le dou transición
+1- A que propiedad le doy transición
 2- Cuanto tiempo dura esa transición 
     transition-property: all;
     transition-duration: 2s;*/
@@ -123,9 +135,14 @@ ul li a {
 .cartilla_video {
     width: 30%;
     padding: 1vh;
-    background-color: rgb(231, 196, 131);
     color: #997c45;
+    transition: all 1s;
 }
+
+.cartilla_video:hover {
+    background-color: #5e5702;
+}
+
 
 h1, h3 {
     font-family: Urbanist-encabezados;
@@ -158,6 +175,11 @@ p {
     width: 90%;
     align-items: center;
     flex-wrap: wrap;
+}
+
+/* Movimiento botones menu */
+footer nav ul li:hover {
+    transform: translate(5px, 5px);
 }
 
 .bottom-menu {
