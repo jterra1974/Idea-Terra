@@ -7,13 +7,20 @@
 <!-- Link a la hoja de estilos -->
 <link rel="stylesheet" href="style.css">
 
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+<!--Responsive Meta Tag de Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Entrega Full Responsibe</title>
 </head>
 <body>
-<div class="grid-container">
+
+<section class="container header">
 <!--Comienzo header-->
-    <header class="header">
-        <div class="header-content">
+    <div class="row">
+        <div class="col">
         <img src="images/greenplanet_grande.jpg" alt="Logo Emresa">
         <nav class="top-menu">
             <ul>
@@ -25,16 +32,22 @@
             </ul>
         </nav>
         </div>
-    </header>
+    </div>
+</section>
 <!--Fin header-->
-<!--Carrusel de imagenes-->
-    <section class="carrusel">
+<!-- Carrusel de imagenes -->
+    <section class="container">
+        <div class="row">
+            <div class="col">
         <img src="images/carrusel_01.jpg" alt="Carrusel de Imagenes">
+            </div>
+        </div>
     </section>
 <!--Fin Carrusel de imagenes-->
 <!--Videos-->
-    <section class="show">
-        <div class="cartilla_video">
+    <section class="container">
+        <div class="row">
+        <div class="col">
             <h1>Video 1</h1>
             <iframe width="70%" src="https://www.youtube.com/embed/N8i6rUL4UIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>         
             </iframe>
@@ -42,7 +55,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
             </p>
         </div>
-        <div class="cartilla_video">
+        <div class="col">
             <h1>Video 2</h1>
             <iframe width="70%" src="https://www.youtube.com/embed/_PsLRgEYf9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
@@ -50,7 +63,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
             </p>
         </div>
-        <div class="cartilla_video">
+        <div class="col">
             <h1>Video 3</h1>
             <iframe width="70%" src="https://www.youtube.com/embed/3ogPvdh_E0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
@@ -58,12 +71,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
             </p>
         </div>
+        </div>
     </section>
 <!--Fin videos-->
 <!--Comienzo footer-->
-<footer class="footer">
-    <div class="footer-content">
-    <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
+<section class="container">
+    <div class="row">
+    <div class="col">
+        <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
     <nav class="bottom-menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -74,7 +89,13 @@
         </ul>
     </nav>
     </div>
-</footer>
-</div>
+    </div>
+</section>
+
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
 </body>
 </html>
