@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Link a la hoja de estilos -->
-<link rel="stylesheet" href="style.css">
-
-    <title>Contacto</title>
-</head>
-<body>
-    <div class="grid-container">
-        <!--Comienzo header-->
-        <header class="header">
-            <div class="header-content">
-            <img src="images/greenplanet_grande.jpg" alt="Logo Emresa">
-            <nav class="top-menu">
-            <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="trabajos.html">Trabajos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    
+    <!--Responsive Meta Tag de Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
+    <body>
+        
+    <!--Comienzo header-->
+    <div class="container">
+        <section class="row header">
+            <div class="col-5">
             </div>
-            </header>
-                <!--Fin header-->
-                <!--Carrusel de imagenes-->
-                    <section class="carrusel">
-                        <img src="images/carrusel_04.jpg" alt="Carrusel de Imagenes">
-                    </section>
-                <!--Fin Carrusel de imagenes-->
-                <!--Videos-->
-                    <section class="show">
-                        
-                    </section>
-                <!--Fin videos-->
-                <!--Comienzo footer-->
-                <footer class="footer">
-                    <div class="footer-content">
-                    <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
-                    <nav class="bottom-menu">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="historia.html">Historia</a></li>
-                            <li><a href="trabajos.html">Trabajos</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
+            <div class="col-4">
+            <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+            </div>
+            <div class="col-3">
+            </div>
+        </section>
+        <section class="row">
+            <nav class="col top-menu">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--Fin header-->
+        <!-- Carrusel de imagenes -->
+            <section class="row">
+                <!-- Clase carrusel para invisibilizar-->
+                <div class="col-12 carrusel">
+                    <!-- Componente de Bootstrap -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                </footer>
                 </div>
-</body>
+            </section>
+        <!--Fin Carrusel de imagenes-->
+    
+    <!--Texto-->
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia possimus repellendus harum dicta tempore, tempora, consectetur itaque quibusdam, repellat perspiciatis expedita officia voluptates cumque laborum. Esse, pariatur? Molestias, quasi provident.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quos quisquam eligendi nihil, omnis, doloremque labore dolor accusamus obcaecati maiores, in ullam ipsa cumque dolorem culpa veritatis eos numquam eaque?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla laudantium culpa quasi ipsum alias cum nesciunt expedita est maiores, harum enim ullam id, corporis sunt delectus quidem voluptatibus sint?</p>
+            </div>    
+        </div>
+    </section>
+     <!--Fin Texto-->
+    
+    <!--Comienzo footer-->
+    <div class="row">
+        <div class="col-4">
+        <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+        <div class="row">
+        <nav class="col bottom-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    
+    </body>
 </html>
