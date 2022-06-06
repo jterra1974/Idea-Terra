@@ -13,62 +13,65 @@
 <!--Responsive Meta Tag de Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Entrega Full Responsibe</title>
+    <title>Entrega 2 Full Responsibe</title>
 </head>
 <body>
 
 <!--Comienzo header-->
-<section class="container header">
-    <div class="row">
-        <div class="col">
-        <img src="images/greenplanet_grande.jpg" alt="Logo Emresa">
-        <nav class="top-menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="trabajos.html">Trabajos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        </div>
+<div class="container">
+<section class="row header">
+    <div class="col-5">
     </div>
+    <div class="col-4">
+    <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+    </div>
+    <div class="col-3">
+    </div>
+</section>
+<section class="row">
+    <nav class="col top-menu">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="trabajos.html">Trabajos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 </section>
 <!--Fin header-->
 <!-- Carrusel de imagenes -->
-    <section class="container">
-        <div class="row">
-            <div class="col">
-                <!-- Componente de Bootstrap -->
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+    <section class="row">
+        <!-- Clase carrusel para invisibilizar-->
+        <div class="col-12 carrusel">
+            <!-- Componente de Bootstrap -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
                 </div>
+                <div class="carousel-item">
+                <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
+                </div>
+                <div class="carousel-item">
+                <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 <!--Fin Carrusel de imagenes-->
 <!--Videos-->
-    <section class="container">
-        <div class="row">
-        <div class="col">
+    <section class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
                 <iframe width="70%" src="https://www.youtube.com/embed/N8i6rUL4UIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>         
                 </iframe> 
@@ -85,7 +88,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
             </p> -->
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
                 <iframe width="70%" src="https://www.youtube.com/embed/_PsLRgEYf9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
@@ -95,15 +98,8 @@
                   <a href="#" class="btn btn-primary">Mas videos--</a>
                 </div>
             </div>
-            <!--<h1>Video 2</h1>
-            <iframe width="70%" src="https://www.youtube.com/embed/_PsLRgEYf9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <h3>Este es realmente el Video 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
-            </p>
-        -->
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
                 <iframe width="70%" src="https://www.youtube.com/embed/3ogPvdh_E0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
@@ -113,35 +109,29 @@
                   <a href="#" class="btn btn-primary">Mas videos</a>
                 </div>
             </div>
-           <!-- <h1>Video 3</h1>
-            <iframe width="70%" src="https://www.youtube.com/embed/3ogPvdh_E0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <h3>Este es realmente el Video 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi cum nobis. Laboriosam facilis deleniti porro temporibus dolorem mollitia odit optio id! Reprehenderit, error atque. Voluptatum ducimus numquam ipsum praesentium.
-            </p>
-            -->
-        </div>
         </div>
     </section>
 <!--Fin videos-->
 <!--Comienzo footer-->
-<section class="container footer">
     <div class="row">
-    <div class="col">
+        <div class="col-4">
         <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
-    <nav class="bottom-menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="trabajos.html">Trabajos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
     </div>
+        <div class="row">
+        <nav class="col bottom-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
     </div>
-</section>
-
 <!-- Script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
 </script>

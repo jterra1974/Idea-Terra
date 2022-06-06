@@ -28,24 +28,37 @@ a {
 
 .header {
     background-color: #997c45;
+    height: 20vh;
 }
 
 .top-menu {
-    width: 75%;
-    display: inline-flex;
-    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-type: none;
+    width: 100%;
 }
-/* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse sobre el elemento o sección */
+
+.top-menu ul li {
+    width: 20%;
+}
 
 ul li a {
     text-decoration: none;
     color: #e6c994;
+}
+
+.carrusel {
+    display: none;
+}
+
+iframe {
+    margin-left: 1rem;
 }
 
 p {
@@ -61,10 +74,6 @@ h5 {
     font-family: Urbanist-encabezados;
 }
 
-/* Movimiento botones menu */
-nav ul li:hover {
-    transform: translate(5px, 5px);
-}
 
 .bottom-menu {
     width: 75%;
@@ -72,9 +81,13 @@ nav ul li:hover {
     justify-content: end;
 }
 
-nav li:hover {
-    /* Crezca o escale 4 veces su tamaño */
+/* Movimiento botones menu */
+/* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse
+sobre el elemento o sección */
+nav ul li:hover {
+    /* Crezca o escale 1.1 veces su tamaño */
         transform: scale(1.1);
+        background-color: #dcae57;
     }
 
 nav ul li {
@@ -87,113 +100,24 @@ nav ul li {
     border: 1px solid #5e5702;
     padding: 3vh;
     background-color: #976405;
+    width: 25%;
 }
 
-/* Segunda seccion del grid - Carrusel de imagenes
-.carrusel {
-    grid-area: carrusel;
-    display: flex;
-    justify-content: center;
-}
-
-.carrusel img {
-    width: 90%;
-}*/
-
-
-/* Tercera seccion del grid - Show media
-.show {
-    grid-area: show;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cartilla_video {
-    width: 30%;
-    padding: 1vh;
-    color: #997c45;
-    transition: all 1s;
-}
-
-.cartilla_video:hover {
-    background-color: #5e5702;
-}
-
-p {
-    font-family: Urbanist-parrafos;
-    font-size: 0.9em;
-}
-
-.cartilla_trabajo {
-    padding: 2vh;
-    width: 30%;
-    background-color: #e0ce92;
-    color: #5e5702;
-}
+/* Pseudoclases:
+ Hover: cuando pasa el mouse cambia
+ link: cuando lo clickea cambia
+ visited: cuando ya fue visitado cambia
+ active: cuando sea activado el botón va a cambiar
+        (sirve para jugar con el menú de navegación y la sensación de profundidad)
 */
-/* Cuarta sección del grid
 
-.footer {
-    grid-area: footer;
-    display: flex;
-    justify-content:center;
-    background-color: #997c45;
+@media screen and (min-width: 600px) {
+    .carrusel {
+        display: block;
+    }
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    flex-wrap: wrap;
+@media screen and (min-width: 992px) {
+    
+    
 }
-*/
-/*
-Definicion grilla
-.grid-container {
-        width: 95%;
-        background-color: #8584833d;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 400px 400px 150px;
-        row-gap: 10px;
-        z-index: 1;
-Si o si, tenemos que definir primero display: grid y las filas y columnas
-        grid-template-areas:
-        'header'
-        'carrusel'
-        'show'
-        'footer'
-        ;
-}
-/* Fin definicion grilla */
-/*
-.header {
-    grid-area: header;
-    /* Propiedades flex 
-    display: flex;
-    /* Alinear horizontalmente
-    justify-content: center;
-    background-color: #997c45;
-    padding: 10px 0px 10px 0px;
-}
-Revisar si funciona flex-wrap!!! Probarlo en el ul*/
-/*.header-content {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    flex-wrap: wrap;
-}
-header div img {
-    height: 100%;
-}
-
-/* Estilo del menu principal */ 
-/* clase nav del header */
-/*
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-*/

@@ -10,57 +10,63 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
-<title>Nosotros</title>
+<!--Responsive Meta Tag de Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 <!--Comienzo header-->
-<section class="container header">
-    <div class="row">
-        <div class="col">
-        <img src="images/greenplanet_grande.jpg" alt="Logo Emresa">
-        <nav class="top-menu">
+<div class="container">
+    <section class="row header">
+        <div class="col-5">
+        </div>
+        <div class="col-4">
+        <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+        </div>
+        <div class="col-3">
+        </div>
+    </section>
+    <section class="row">
+        <nav class="col top-menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="trabajos.html">Trabajos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="trabajos.html">Trabajos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        </div>
-    </div>
-</section>
-<!--Fin header-->
-<!-- Carrusel de imagenes -->
-<section class="container">
-    <div class="row">
-        <div class="col">
-            <!-- Componente de Bootstrap -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+    </section>
+    <!--Fin header-->
+    <!-- Carrusel de imagenes -->
+        <section class="row">
+            <!-- Clase carrusel para invisibilizar-->
+            <div class="col-12 carrusel">
+                <!-- Componente de Bootstrap -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
                     <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
-                  </div>
-                  <div class="carousel-item">
+                    </div>
+                    <div class="carousel-item">
                     <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
-                  </div>
-                  <div class="carousel-item">
+                    </div>
+                    <div class="carousel-item">
                     <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
-                  </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-    </div>
-</section>
-<!--Fin Carrusel de imagenes-->
+        </section>
+    <!--Fin Carrusel de imagenes-->
 
 <!--Texto-->
 <section class="container">
@@ -76,11 +82,15 @@
  <!--Fin Texto-->
 
 <!--Comienzo footer-->
-<section class="container footer">
+<div class="row">
+    <div class="col-4">
+    <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>
     <div class="row">
-    <div class="col">
-        <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
-    <nav class="bottom-menu">
+    <nav class="col bottom-menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
@@ -90,8 +100,7 @@
         </ul>
     </nav>
     </div>
-    </div>
-</section>
+</div>
 
 <!-- Script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
