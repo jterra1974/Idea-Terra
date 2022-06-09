@@ -20,16 +20,11 @@
 <!--Comienzo header-->
 <div class="container">
 <section class="row header">
-    <div class="col-5">
-    </div>
-    <div class="col-4">
+    <div class="col">
     <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
     </div>
-    <div class="col-3">
-    </div>
 </section>
-<section class="row">
-    <nav class="col top-menu">
+<nav class="col top-menu">
         <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -37,11 +32,11 @@
         <li><a href="trabajos.html">Trabajos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-</section>
+</nav>
 <!--Fin header-->
 <!-- Carrusel de imagenes -->
-    <section class="row">
+            <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más}}-->
+    <section class="row d-none d-sm-block">
         <!-- Clase carrusel para invisibilizar-->
         <div class="col-12 carrusel">
             <!-- Componente de Bootstrap -->
@@ -70,7 +65,7 @@
     </section>
 <!--Fin Carrusel de imagenes-->
 <!--Videos-->
-    <section class="row">
+    <section class="row d-flex">
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
                 <iframe width="70%" src="https://www.youtube.com/embed/N8i6rUL4UIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>         
@@ -125,7 +120,8 @@
             </ul>
         </nav>
         </div>
-    </div>
+</div>
+
 <!-- Script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
 </script>

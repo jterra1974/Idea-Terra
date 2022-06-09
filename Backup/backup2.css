@@ -1,0 +1,124 @@
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-encabezados;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-Bold.ttf');
+}
+
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-parrafos;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-Light.ttf');
+}
+
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-menu;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-SemiBold.ttf');
+}
+
+a {
+    font-family: Urbanist-menu;
+}
+
+.header {
+    background-color: #997c45;
+    height: 22vh;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.top-menu ul li {
+    width: 20%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e6c994;
+}
+
+/*
+.carrusel {
+    display: none;
+}
+*/
+iframe {
+    margin-left: 1rem;
+}
+
+p {
+    font-family: Urbanist-parrafos;
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: #997c45;
+}
+
+h5 {
+    font-family: Urbanist-encabezados;
+}
+
+
+.bottom-menu {
+    width: 75%;
+    display: inline-flex;
+    justify-content: end;
+}
+
+/* Movimiento botones menu */
+/* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse
+sobre el elemento o sección */
+nav ul li:hover {
+    /* Crezca o escale 1.1 veces su tamaño */
+        transform: scale(1.1);
+        background-color: #dcae57;
+    }
+
+nav ul li {
+    /* dos valores obligatorios que hay que agregar para que funcione 
+1- A que propiedad le doy transición
+2- Cuanto tiempo dura esa transición 
+    transition-property: all;
+    transition-duration: 2s;*/
+    transition: all 0.5s;
+    border: 1px solid #5e5702;
+    padding: 3vh;
+    background-color: #976405;
+    width: 25%;
+}
+
+/* Pseudoclases:
+ Hover: cuando pasa el mouse cambia
+ link: cuando lo clickea cambia
+ visited: cuando ya fue visitado cambia
+ active: cuando sea activado el botón va a cambiar
+        (sirve para jugar con el menú de navegación y la sensación de profundidad)
+*/
+/*
+@media screen and (min-width: 600px) {
+    .carrusel {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    
+}*/

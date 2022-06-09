@@ -1,108 +1,55 @@
+@charset "UTF-8";
 /* Regla @font-face */
 @font-face {
-    /* Me permite elegir un nombre de fuente para identificarla */
-    font-family: Urbanist-encabezados;
-    /* Donde está esa fuente */
-    src: url('Urbanist/static/PlusJakartaSans-Bold.ttf');
-}
-
-/* Regla @font-face */
-@font-face {
-    /* Me permite elegir un nombre de fuente para identificarla */
-    font-family: Urbanist-parrafos;
-    /* Donde está esa fuente */
-    src: url('Urbanist/static/PlusJakartaSans-Light.ttf');
-}
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-encabezados;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-Bold.ttf"); }
 
 /* Regla @font-face */
 @font-face {
-    /* Me permite elegir un nombre de fuente para identificarla */
-    font-family: Urbanist-menu;
-    /* Donde está esa fuente */
-    src: url('Urbanist/static/PlusJakartaSans-SemiBold.ttf');
-}
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-parrafos;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-Light.ttf"); }
 
-a {
-    font-family: Urbanist-menu;
-}
-
-.header {
-    background-color: #997c45;
-    height: 20vh;
-}
-
-.top-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    width: 100%;
-}
-
-.top-menu ul li {
-    width: 20%;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #e6c994;
-}
-
-.carrusel {
-    display: none;
-}
+/* Regla @font-face */
+@font-face {
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-menu;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-SemiBold.ttf"); }
 
 iframe {
-    margin-left: 1rem;
-}
+  margin-left: 1rem; }
 
-p {
-    font-family: Urbanist-parrafos;
-    font-size: 0.9em;
-}
+/* Crear un grupo de propiedades a utilizar
+pero con valores que voy a definir
+en un futuro cercano
+Parecido a los constructores en otros lenguajes
+*/
+.top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
 
-.footer {
-    background-color: #997c45;
-}
+.top-menu ul li {
+  width: 20%; }
 
-h5 {
-    font-family: Urbanist-encabezados;
-}
-
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
 
 .bottom-menu {
-    width: 75%;
-    display: inline-flex;
-    justify-content: end;
-}
+  width: 75%;
+  display: inline-flex;
+  justify-content: end; }
 
 /* Movimiento botones menu */
 /* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse
 sobre el elemento o sección */
-nav ul li:hover {
-    /* Crezca o escale 1.1 veces su tamaño */
-        transform: scale(1.1);
-        background-color: #dcae57;
-    }
-
-nav ul li {
-    /* dos valores obligatorios que hay que agregar para que funcione 
-1- A que propiedad le doy transición
-2- Cuanto tiempo dura esa transición 
-    transition-property: all;
-    transition-duration: 2s;*/
-    transition: all 0.5s;
-    border: 1px solid #5e5702;
-    padding: 3vh;
-    background-color: #976405;
-    width: 25%;
-}
-
 /* Pseudoclases:
  Hover: cuando pasa el mouse cambia
  link: cuando lo clickea cambia
@@ -110,7 +57,7 @@ nav ul li {
  active: cuando sea activado el botón va a cambiar
         (sirve para jugar con el menú de navegación y la sensación de profundidad)
 */
-
+/*
 @media screen and (min-width: 600px) {
     .carrusel {
         display: block;
@@ -120,4 +67,45 @@ nav ul li {
 @media screen and (min-width: 992px) {
     
     
+}*/
+/*
+.carrusel {
+    display: none;
 }
+*/
+.header {
+  background-color: #9e370e;
+  height: 22vh; }
+
+ul li a {
+  text-decoration: none;
+  color: #bda26d; }
+
+nav ul li:hover {
+  transform: scale(1.1);
+  background-color: #d5c3a2; }
+
+nav ul li {
+  /* dos valores obligatorios que hay que agregar para que funcione 
+1- A que propiedad le doy transición
+2- Cuanto tiempo dura esa transición 
+    transition-property: all;
+    transition-duration: 2s;*/
+  transition: all 0.5s;
+  border: 1px solid #302715;
+  padding: 3vh;
+  background-color: #997c45;
+  width: 25%; }
+
+.footer {
+  background-color: #534325; }
+
+p {
+  font-family: Urbanist-parrafos;
+  font-size: 0.9em; }
+
+h5 {
+  font-family: Urbanist-encabezados; }
+
+a {
+  font-family: Urbanist-menu; }

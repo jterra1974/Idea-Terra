@@ -1,0 +1,52 @@
+/* Crear un grupo de propiedades a utilizar
+pero con valores que voy a definir
+en un futuro cercano
+Parecido a los constructores en otros lenguajes
+*/
+@mixin menu($ancho, $display, $alineacion) {
+     width: $ancho;
+     display: $display;
+     justify-content: $alineacion;
+ }
+
+.top-menu {
+    @include menu(100%, flex, space-around);
+}
+
+.top-menu ul li {
+    width: 20%;
+}
+
+ul {
+    @include menu(100%, flex, center);
+    list-style-type: none;
+}
+
+
+.bottom-menu {
+    @include menu(75%, inline-flex, end);
+}
+
+/* Movimiento botones menu */
+/* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse
+sobre el elemento o sección */
+
+
+/* Pseudoclases:
+ Hover: cuando pasa el mouse cambia
+ link: cuando lo clickea cambia
+ visited: cuando ya fue visitado cambia
+ active: cuando sea activado el botón va a cambiar
+        (sirve para jugar con el menú de navegación y la sensación de profundidad)
+*/
+/*
+@media screen and (min-width: 600px) {
+    .carrusel {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    
+}*/
