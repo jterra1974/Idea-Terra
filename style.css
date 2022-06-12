@@ -47,9 +47,6 @@ ul {
   display: inline-flex;
   justify-content: end; }
 
-/* Movimiento botones menu */
-/* Hover: Se activan las propiedades dentro de las llaves cuando paso el mouse
-sobre el elemento o sección */
 /* Pseudoclases:
  Hover: cuando pasa el mouse cambia
  link: cuando lo clickea cambia
@@ -77,14 +74,6 @@ sobre el elemento o sección */
   background-color: #9e370e;
   height: 22vh; }
 
-ul li a {
-  text-decoration: none;
-  color: #bda26d; }
-
-nav ul li:hover {
-  transform: scale(1.1);
-  background-color: #d5c3a2; }
-
 nav ul li {
   /* dos valores obligatorios que hay que agregar para que funcione 
 1- A que propiedad le doy transición
@@ -96,6 +85,23 @@ nav ul li {
   padding: 3vh;
   background-color: #997c45;
   width: 25%; }
+  nav ul li:hover {
+    transform: scale(1.1);
+    background-color: #d5c3a2; }
+  nav ul li a {
+    text-decoration: none;
+    color: #bda26d; }
+
+.bt-videos {
+  background-color: #e44f14;
+  color: #581f08;
+  border: 1px solid #997c45; }
+
+h5 {
+  color: #581f08; }
+
+p {
+  color: #110602; }
 
 .footer {
   background-color: #534325; }

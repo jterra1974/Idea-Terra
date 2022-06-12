@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link a la hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    
+    <!-- Link a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
     
     <!--Responsive Meta Tag de Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,104 +22,142 @@
     <div class="container">
         <section class="row header">
             <div class="col">
-            <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+                <a href="index.html"><img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+                </a>
             </div>
         </section>
-    <section class="row">
-        <nav class="col top-menu">
-            <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="trabajos.html">Trabajos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!--Fin header-->
-    <!-- Carrusel de imagenes -->
         <section class="row">
-            <!-- Clase carrusel para invisibilizar-->
+            <nav class="col top-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="historia.html">Historia</a>
+                    </li>
+                    <li>
+                        <a href="trabajos.html">Trabajos</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!--Fin header-->
+        <!-- Carrusel de imagenes -->
+        <section class="row">
+        <!-- Clase carrusel para invisibilizar-->
             <div class="col-12 carrusel">
                 <!-- Componente de Bootstrap -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
+                        <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Primer imagen">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrusel_04.jpg" class="d-block w-100" alt="Segunda imagen">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrusel_05.jpg" class="d-block w-100" alt="Tercer imagen">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+            </div>
+        </section>
+        <!--Fin Carrusel de imagenes-->
+        <!--Videos-->
+        <section class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Trabajo1.jpg" alt="Trabajo 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Trabajo 1</h5>
+                    <p class="card-text">
+                        El proyecto consiste en una nueva pieza que se adiciona a la Terminal Aérea de Punta del Este, ubicado en Laguna del Sauce.
+                    <br />
+                        La nueva pieza brinda soporte para los vuelos privados, correspondientes al FBO VIP Club, se concibió como un volumen único contenedor de todas las funciones que requería el programa, implantándose como un pabellón silencioso, respetuoso de la gran obra del Arquitecto Carlos Ott mediante el uso de un lenguaje atemporal.    
+                    </p>
+                    <a href="#" class="btn btn-primary">Mas trabajos</a>
                     </div>
-                    <div class="carousel-item">
-                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Trabajo2.jpg" alt="Trabajo 2">
+                    <div class="card-body">
+                    <h5 class="card-title">Trabajo 2</h5>
+                    <p class="card-text">El proyecto se ubica en la esquina de las calles Maldonado y Florida, un singular punto de la ciudad de Montevideo en el borde del barrio con la costa. Recientemente bautizado como el distrito Las Artes, la zona se presenta con un creciente dinamismo y mejoras urbanas.
+                    </p>
+                    <a href="#" class="btn btn-primary">M&aacute;s trabajos</a>
                     </div>
-                    <div class="carousel-item">
-                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Trabajo3.jpg" alt="Trabajo 3">
+                    <div class="card-body">
+                    <h5 class="card-title">Trabajo 3</h5>
+                    <p class="card-text">Se trata de un proyecto de apartamentos construido en el barrio de Punta Carretas, en un típico lote de 10mts que presenta la particularidad de que su fondo es colindante con un jardín de una escuela pública de abundante arbolado y su frente se abre a una plaza de también abundante vegetación.
+                    </p>
+                    <a href="#" class="btn btn-primary">M&aacute;s trabajos</a>
                     </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Trabajo4.jpg" alt="Trabajo 4">
+                    <div class="card-body">
+                    <h5 class="card-title">Trabajo 4</h5>
+                    <p class="card-text">
+                        El desafío principal en el diseño para las nuevas oficinas de Mercado Libre, ubicadas en el piso tres de la Torre III de Aguada Park, fue idear un espacio que refleje la cultura y los valores de la empresa, en conjunto con las aspiraciones de diseño, funcionalidad, la sensación de comunidad entre colaboradores y el crecimiento continuo de la firma.    
+                    </p>
+                    <a href="#" class="btn btn-primary">M&aacute;s trabajos</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </section>
-    <!--Fin Carrusel de imagenes-->
-    <!--Videos-->
-    <section class="row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="images/Trabajo.jpg" alt="Trabajo 1">
-                <div class="card-body">
-                  <h5 class="card-title">Trabajo 1</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas trabajos</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="images/Trabajo.jpg" alt="Trabajo 2">
-                <div class="card-body">
-                  <h5 class="card-title">Trabajo 2</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas trabajos--</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="images/Trabajo.jpg" alt="Trabajo 3">
-                <div class="card-body">
-                  <h5 class="card-title">Trabajo 3</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas trabajos</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Fin videos-->
-    <!--Comienzo footer-->
-        <div class="row">
-            <div class="col-4">
-            <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
-            </div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-        </div>
+        <!--Fin videos-->
+        <!--Comienzo footer-->
             <div class="row">
-            <nav class="col bottom-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="trabajos.html">Trabajos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <div class="col-4">
+                    <a href="index.html"><img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
+                    </a>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
             </div>
-        </div>
+                <div class="row">
+                    <nav class="col bottom-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="historia.html">Historia</a>
+                            </li>
+                            <li>
+                                <a href="trabajos.html">Trabajos</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    </div>
         <!-- Script de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
         </script>

@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Link a la hoja de estilos -->
-<link rel="stylesheet" href="style.css">
-
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
+<!-- Link a la hoja de estilos -->
+<link rel="stylesheet" href="style.css">
+
 <!--Responsive Meta Tag de Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Entrega 2 Full Responsibe</title>
 </head>
 <body>
 
 <!--Comienzo header-->
 <div class="container">
-<section class="row header">
-    <div class="col">
-    <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
-    </div>
-</section>
-<nav class="col top-menu">
+    <section class="row header">
+        <div class="col">
+            <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+        </div>
+    </section>
+    <nav class="col top-menu">
         <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="trabajos.html">Trabajos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="historia.html">Historia</a>
+            </li>
+            <li>
+                <a href="trabajos.html">Trabajos</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
         </ul>
 </nav>
 <!--Fin header-->
 <!-- Carrusel de imagenes -->
-            <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más}}-->
+        <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más -->
     <section class="row d-none d-sm-block">
         <!-- Clase carrusel para invisibilizar-->
         <div class="col-12 carrusel">
@@ -43,13 +52,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
+                    <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
                 </div>
                 <div class="carousel-item">
-                <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
+                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
                 </div>
                 <div class="carousel-item">
-                <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
+                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -68,34 +77,56 @@
     <section class="row d-flex">
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
-                <iframe width="70%" src="https://www.youtube.com/embed/N8i6rUL4UIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>         
-                </iframe> 
-                <div class="card-body">
-                  <h5 class="card-title">Video 1</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas videos</a>
-                </div>
-            </div>
-            </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <iframe width="70%" src="https://www.youtube.com/embed/_PsLRgEYf9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="90%"
+                        src="https://www.youtube.com/embed/coXl26Q2uFc"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
                 </iframe>
                 <div class="card-body">
-                  <h5 class="card-title">Video 2</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas videos--</a>
+                    <h5 class="card-title">The Voice Chile</h5>
+                    <p class="card-text">
+                        Cientos de cantantes buscarán convencer a cuatro coaches para ganar la temporada 2022 de The Voice Chile: Yuri, Beto Cuevas, Cami y Gente de Zona reclutarán a los mejores talentos del país.
+                        Nicolás Ruiz cantó "Such a night" de Michael Bublé en las audiciones a ciegas ¿Conseguirá entrar en alguno de los equipos?   
+                    </p>
+                    <a href="https://www.youtube.com/" class="btn btn-primary bt-videos">Mas videos</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
-                <iframe width="70%" src="https://www.youtube.com/embed/3ogPvdh_E0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="90%"
+                        src="https://www.youtube.com/embed/aaFHAQNdnnA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
                 </iframe>
                 <div class="card-body">
-                  <h5 class="card-title">Video 3</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, vitae sed quia dicta consectetur debitis? Ea labore quam quis saepe repellat. Mollitia, sed ipsum enim minus ex praesentium itaque.</p>
-                  <a href="#" class="btn btn-primary">Mas videos</a>
+                    <h5 class="card-title">La Voz Uruguay</h5>
+                    <p class="card-text">
+                        Me encanta Yandira. Cuando arrancó no daba mucho por ella, pero no ha dejado de mejorar, y la verdad fue la mejor de los 8 de Lucas en los knockouts... El resto flojitos todos  
+                    </p>
+                    <a href="https://www.youtube.com/" class="btn btn-primary bt-videos">Mas videos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <iframe width="90%"
+                        src="https://www.youtube.com/embed/KMgojqRlLak"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+                <div class="card-body">
+                    <h5 class="card-title">El Francotirador</h5>
+                    <p class="card-text">
+                        El teniente Ernesto Espinosa cubrió a sus compañeros para que pudieran salir de un refugio en llamas. Su cuerpo nunca se encontró.    
+                    </p>
+                    <a href="https://www.youtube.com/" class="btn btn-primary bt-videos">Mas videos</a>
                 </div>
             </div>
         </div>
@@ -104,22 +135,32 @@
 <!--Comienzo footer-->
     <div class="row">
         <div class="col-4">
-        <img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico">
+            <a href="index.html"><img src="images/greenplanet_chico.jpg" alt="Logo Empresa Chico"></a>
         </div>
         <div class="col-4"></div>
         <div class="col-4"></div>
     </div>
-        <div class="row">
+    <div class="row">
         <nav class="col bottom-menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="trabajos.html">Trabajos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="historia.html">Historia</a>
+                </li>
+                <li>
+                    <a href="trabajos.html">Trabajos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
-        </div>
+    </div>
 </div>
 
 <!-- Script de Bootstrap -->

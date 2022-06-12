@@ -6,17 +6,6 @@ $caoba: #9e370e;
     height: 22vh;
 }
 
-ul li a {
-    text-decoration: none;
-    color: lighten($marron, 15%);
-}
-nav ul li {
-    &:hover {
-        transform: scale(1.1);
-        background-color: lighten($marron, 30%);
-    }
-}
-
 nav ul li {
     /* dos valores obligatorios que hay que agregar para que funcione 
 1- A que propiedad le doy transición
@@ -28,8 +17,57 @@ nav ul li {
     padding: 3vh;
     background-color: ($marron);
     width: 25%;
+    &:hover {
+        transform: scale(1.1);
+        background-color: lighten($marron, 30%);
+    }
+    a {
+        text-decoration: none;
+        color: lighten($marron, 15%); 
+    } 
+}
+.bt-videos {
+    background-color: lighten($caoba, 15%);
+    color: darken($caoba, 15%);
+    border: 1px solid $marron;
+    &visited {
+        background-color: lighten($caoba, 30%);
+    }
+}
+
+h5 {
+    color: darken($caoba, 15%);
+}
+p {
+    color: darken($caoba, 30%);
 }
 
 .footer {
     background-color: darken($marron, 20%);
 }
+
+/* Muchas propiedades distintas dentro de la misma extension
+Placeholder %
+
+%botones {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.ok {
+    background-color: green;
+    @extend %botones;
+}
+
+.error {
+    background-color: red;
+    @extend %botones;
+}
+
+.disabled {
+    background-color: gray;
+    @extend %botones;
+}
+
+Siempre se reutilizan */
