@@ -92,10 +92,12 @@ nav ul li {
     text-decoration: none;
     color: #bda26d; }
 
-.bt-videos {
+.bt-boot {
   background-color: #e44f14;
   color: #581f08;
   border: 1px solid #997c45; }
+  .bt-bootvisited {
+    background-color: #f08155; }
 
 h5 {
   color: #581f08; }
@@ -106,6 +108,31 @@ p {
 .footer {
   background-color: #534325; }
 
+/* Muchas propiedades distintas dentro de la misma extension
+Placeholder %
+
+%botones {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.ok {
+    background-color: green;
+    @extend %botones;
+}
+
+.error {
+    background-color: red;
+    @extend %botones;
+}
+
+.disabled {
+    background-color: gray;
+    @extend %botones;
+}
+
+Siempre se reutilizan */
 p {
   font-family: Urbanist-parrafos;
   font-size: 0.9em; }
