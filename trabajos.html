@@ -20,61 +20,66 @@
     
     <!--Comienzo header-->
     <div class="container">
-        <section class="row header">
-            <div class="col">
-                <a href="index.html"><img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
-                </a>
-            </div>
-        </section>
-        <section class="row">
-            <nav class="col top-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="historia.html">Historia</a>
-                    </li>
-                    <li>
-                        <a href="trabajos.html">Trabajos</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Logotipo.gif" alt="Logo Empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
                 </ul>
-            </nav>
-        </section>
+                
+            </div>
+            </div>
+        </nav>
         <!--Fin header-->
         <!-- Carrusel de imagenes -->
-        <section class="row">
+    <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más -->
+    <section class="row d-none d-sm-block">
         <!-- Clase carrusel para invisibilizar-->
-            <div class="col-12 carrusel">
-                <!-- Componente de Bootstrap -->
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-item active">
-                        <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Primer imagen">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="images/carrusel_04.jpg" class="d-block w-100" alt="Segunda imagen">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="images/carrusel_05.jpg" class="d-block w-100" alt="Tercer imagen">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
+        <div class="col-12">
+            <!-- Componente de Bootstrap -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel_04.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section>
-        <!--Fin Carrusel de imagenes-->
+        </div>
+    </section>
+<!--Fin Carrusel de imagenes-->
         <!--Videos-->
         <section class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-4">
@@ -87,7 +92,7 @@
                     <br />
                         La nueva pieza brinda soporte para los vuelos privados, correspondientes al FBO VIP Club, se concibió como un volumen único contenedor de todas las funciones que requería el programa, implantándose como un pabellón silencioso, respetuoso de la gran obra del Arquitecto Carlos Ott mediante el uso de un lenguaje atemporal.    
                     </p>
-                    <a href="#" class="btn btn-primary bt-boot">Mas trabajos</a>
+                    <a href="#" class="bt-boot btn btn-primary">Mas trabajos</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +103,7 @@
                     <h5 class="card-title">Trabajo 2</h5>
                     <p class="card-text">El proyecto se ubica en la esquina de las calles Maldonado y Florida, un singular punto de la ciudad de Montevideo en el borde del barrio con la costa. Recientemente bautizado como el distrito Las Artes, la zona se presenta con un creciente dinamismo y mejoras urbanas.
                     </p>
-                    <a href="#" class="btn btn-primary bt-boot">M&aacute;s trabajos</a>
+                    <a href="#" class="bt-boot btn btn-primary">M&aacute;s trabajos</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +114,7 @@
                     <h5 class="card-title">Trabajo 3</h5>
                     <p class="card-text">Se trata de un proyecto de apartamentos construido en el barrio de Punta Carretas, en un típico lote de 10mts que presenta la particularidad de que su fondo es colindante con un jardín de una escuela pública de abundante arbolado y su frente se abre a una plaza de también abundante vegetación.
                     </p>
-                    <a href="#" class="btn btn-primary bt-boot">M&aacute;s trabajos</a>
+                    <a href="#" class="bt-boot btn btn-primary">M&aacute;s trabajos</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +126,7 @@
                     <p class="card-text">
                         El desafío principal en el diseño para las nuevas oficinas de Mercado Libre, ubicadas en el piso tres de la Torre III de Aguada Park, fue idear un espacio que refleje la cultura y los valores de la empresa, en conjunto con las aspiraciones de diseño, funcionalidad, la sensación de comunidad entre colaboradores y el crecimiento continuo de la firma.    
                     </p>
-                    <a href="#" class="btn btn-primary bt-boot">M&aacute;s trabajos</a>
+                    <a href="#" class="bt-boot btn btn-primary">M&aacute;s trabajos</a>
                     </div>
                 </div>
             </div>

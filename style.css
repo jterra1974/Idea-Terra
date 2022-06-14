@@ -23,19 +23,6 @@
 iframe {
   margin-left: 1rem; }
 
-/* Crear un grupo de propiedades a utilizar
-pero con valores que voy a definir
-en un futuro cercano
-Parecido a los constructores en otros lenguajes
-*/
-.top-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-around; }
-
-.top-menu ul li {
-  width: 20%; }
-
 ul {
   width: 100%;
   display: flex;
@@ -47,29 +34,9 @@ ul {
   display: inline-flex;
   justify-content: end; }
 
-/* Pseudoclases:
- Hover: cuando pasa el mouse cambia
- link: cuando lo clickea cambia
- visited: cuando ya fue visitado cambia
- active: cuando sea activado el botón va a cambiar
-        (sirve para jugar con el menú de navegación y la sensación de profundidad)
-*/
-/*
-@media screen and (min-width: 600px) {
-    .carrusel {
-        display: block;
-    }
-}
+.row {
+  margin-bottom: 0.5rem; }
 
-@media screen and (min-width: 992px) {
-    
-    
-}*/
-/*
-.carrusel {
-    display: none;
-}
-*/
 .header {
   background-color: #9e370e;
   height: 22vh; }
@@ -90,14 +57,15 @@ nav ul li {
     background-color: #d5c3a2; }
   nav ul li a {
     text-decoration: none;
-    color: #bda26d; }
+    color: #d5c3a2; }
 
 .bt-boot {
   background-color: #e44f14;
   color: #581f08;
   border: 1px solid #997c45; }
-  .bt-bootvisited {
-    background-color: #f08155; }
+
+.bt-boot:visited {
+  background-color: #f08155; }
 
 h5 {
   color: #581f08; }
@@ -108,31 +76,6 @@ p {
 .footer {
   background-color: #534325; }
 
-/* Muchas propiedades distintas dentro de la misma extension
-Placeholder %
-
-%botones {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.ok {
-    background-color: green;
-    @extend %botones;
-}
-
-.error {
-    background-color: red;
-    @extend %botones;
-}
-
-.disabled {
-    background-color: gray;
-    @extend %botones;
-}
-
-Siempre se reutilizan */
 p {
   font-family: Urbanist-parrafos;
   font-size: 0.9em; }

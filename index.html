@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
@@ -16,49 +23,54 @@
 </head>
 <body>
 
-<!--Comienzo header-->
 <div class="container">
-    <section class="row header">
-        <div class="col">
-            <img class="img-top" src="images/greenplanet_grande.jpg" alt="Logo Empresa">
+    <!--Comienzo header-->
+    <!-- Navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Logotipo.gif" alt="Logo Empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+                </ul>
+                
+            </div>
         </div>
-    </section>
-    <nav class="col top-menu">
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="historia.html">Historia</a>
-            </li>
-            <li>
-                <a href="trabajos.html">Trabajos</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-</nav>
-<!--Fin header-->
-<!-- Carrusel de imagenes -->
-        <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más -->
+    </nav>
+    <!-- Fin header -->
+    <!-- Carrusel de imagenes -->
+    <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más -->
     <section class="row d-none d-sm-block">
         <!-- Clase carrusel para invisibilizar-->
-        <div class="col-12 carrusel">
+        <div class="col-12">
             <!-- Componente de Bootstrap -->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Primer imagen">
+                    <img src="images/carrusel_01.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Segunda imagen">
+                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Tercer imagen">
+                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 3">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -108,7 +120,7 @@
                     <p class="card-text">
                         Me encanta Yandira. Cuando arrancó no daba mucho por ella, pero no ha dejado de mejorar, y la verdad fue la mejor de los 8 de Lucas en los knockouts... El resto flojitos todos  
                     </p>
-                    <a href="https://www.youtube.com/" class="btn btn-primary bt-boot">Mas videos</a>
+                    <a href="https://www.youtube.com/" class="bt-boot btn btn-primary">Mas videos</a>
                 </div>
             </div>
         </div>
