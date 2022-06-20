@@ -42,11 +42,6 @@ ul {
   height: 22vh; }
 
 nav ul li {
-  /* dos valores obligatorios que hay que agregar para que funcione 
-1- A que propiedad le doy transición
-2- Cuanto tiempo dura esa transición 
-    transition-property: all;
-    transition-duration: 2s;*/
   transition: all 0.5s;
   border: 1px solid #302715;
   padding: 3vh;
@@ -64,7 +59,7 @@ nav ul li {
   color: #581f08;
   border: 1px solid #997c45; }
 
-.bt-boot:visited {
+.bt-boot:hover {
   background-color: #f08155; }
 
 h5 {
