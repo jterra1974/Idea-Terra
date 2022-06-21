@@ -20,6 +20,10 @@
   /* Donde está esa fuente */
   src: url("Urbanist/static/PlusJakartaSans-SemiBold.ttf"); }
 
+body {
+  background-image: url(images/Fondo.jpg);
+  background-size: cover; }
+
 iframe {
   margin-left: 1rem; }
 
@@ -37,39 +41,38 @@ ul {
 .row {
   margin-bottom: 0.5rem; }
 
-.header {
-  background-color: #9e370e;
-  height: 22vh; }
-
 nav ul li {
   transition: all 0.5s;
-  border: 1px solid #302715;
+  border: 1px solid #312816;
   padding: 3vh;
-  background-color: #997c45;
+  background-color: #9b7d46;
   width: 25%; }
   nav ul li:hover {
     transform: scale(1.1);
-    background-color: #d5c3a2; }
+    background-color: #d6c4a4; }
   nav ul li a {
     text-decoration: none;
-    color: #d5c3a2; }
+    color: #d6c4a4; }
 
 .bt-boot {
-  background-color: #e44f14;
-  color: #581f08;
-  border: 1px solid #997c45; }
+  background-color: #e64f14;
+  color: #591f08;
+  border: 1px solid #9b7d46; }
 
 .bt-boot:hover {
-  background-color: #f08155; }
+  background-color: #f08256; }
 
 h5 {
-  color: #581f08; }
+  color: #591f08; }
 
 p {
-  color: #110602; }
+  color: #130602; }
+
+.fondito {
+  background-color: rgba(155, 125, 70, 0.5); }
 
 .footer {
-  background-color: #534325; }
+  background-color: #544426; }
 
 p {
   font-family: Urbanist-parrafos;

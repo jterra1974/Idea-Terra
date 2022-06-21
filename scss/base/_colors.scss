@@ -1,11 +1,7 @@
 //variables
-$marron: #997c45;
-$caoba: #9e370e;
-
-.header {
-    background-color: ($caoba);
-    height: 22vh;
-}
+$marron: hsl(39, 38%, 44%);
+$caoba: hsl(17, 84%, 34%);
+$fondo1: hsla(39, 38%, 44%, 0.5);
 
 nav ul li {
     transition: all 0.5s;
@@ -43,6 +39,10 @@ h5 {
 
 p {
     color: darken($caoba, 30%);
+}
+
+.fondito {
+    background-color: ($fondo1);
 }
 
 .footer {
