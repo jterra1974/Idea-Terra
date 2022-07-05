@@ -11,6 +11,6 @@ ul {
 }
 
 
-.bottom-menu {
-    @include menu(75%, inline-flex, end);
+.bottom-menu ul {
+    @include menu(100%, flex, center);
 }

@@ -33,10 +33,10 @@ ul {
   justify-content: center;
   list-style-type: none; }
 
-.bottom-menu {
-  width: 75%;
-  display: inline-flex;
-  justify-content: end; }
+.bottom-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 .row {
   margin-bottom: 0.5rem; }
@@ -72,7 +72,7 @@ p {
   background-color: rgba(155, 125, 70, 0.5); }
 
 .footer {
-  background-color: #544426; }
+  background-color: #c6ae80; }
 
 p {
   font-family: Urbanist-parrafos;
